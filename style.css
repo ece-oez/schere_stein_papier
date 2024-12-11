@@ -1,0 +1,117 @@
+body{
+    background-color: #9dd4d1;
+    font-family: 'Indie Flower', cursive;
+}
+
+/*Section 1 //front*/
+/*
+#front{
+    display: none;
+}*/
+
+h1{
+    font-size: 70px;
+    color: #072533 ;
+}
+
+#hands{
+    margin-top: 1px;
+    width: 30%;
+    align-self: center;
+}
+
+button{
+    font-size: 30px;
+    color: white;
+    padding: 20px;
+    border: 3px solid #42aeb5;
+    border-radius: 25px;
+    width: 100%;
+    background-color: #42aeb5;
+}
+
+/*Section 2 //choosePlayer*/
+
+#choosePlayer{
+    display: none;
+}
+
+/*Section 2 //chooseEnemy*/
+
+#chooseEnemy{
+    display: none;
+}
+
+/*-------------chooseWeapon------------------------------------------------------------*/
+#chooseWeaponLayer{
+    display: none;
+}
+
+#papier{
+        width:  23%;
+}
+
+/*-------------transitionToEnemyLayout------------------------------------------------------------*/
+#transitionEnemy{
+    display: none;
+}
+
+#countdown{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 150px;
+    font-weight: 1000;
+    margin-top: 18%;
+    display: none;
+}
+
+#gameLayer{
+    display: none;
+}
+
+/*-------------------------------------------------------------------------*/
+#inputField{
+    font-size: 40px;
+    color: #072533 ;
+}
+
+input{
+    font-size: 40px;
+    text-align: center;
+    background-color:#9dd4d1 ;
+    border: 1px solid #072533;
+    padding: 10px;
+    width: 350px;
+    height: 50px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.little{
+    margin-top: 5px;
+    margin-bottom: 50px;
+    width: 120px;
+    height: 120px;
+}
+
+.abstandMitte{
+    justify-content: space-between;
+}
+
+.linksAnordnen{
+    justify-content: flex-start;
+}
+
+.rechtsAnordnen{
+    justify-content: flex-end;
+}
+
+.links{
+    margin-left: 40px;
+}
+
+.rechts{
+    margin-right: 40px;
+}

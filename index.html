@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js" ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>Schere, Stein oder Papier</title>
+</head>
+<body>
+
+    <section id="front">
+            <div class="center">
+                <h1 class="center">Schere, Stein oder Papier!</h1>
+            </div>
+
+            <div class="center">
+                <img id="hands"src="img/schere-stein-papier.png" alt="">
+            </div>
+
+    </section> 
+
+    <section id="choosePlayer">
+        <div class="center">
+            <h1>Wählen Sie einen Player aus</h1>
+        </div>
+        <div id="" class="center">
+            <img id="girl" src="img/frau.png" onmouseover="getId('girl'), makeShade()" onmouseout="removeShade()" onclick="choosePlayer()">
+            <img id="boy" src="img/mann.png" onmouseover="getId('boy'), makeShade()" onmouseout="removeShade()" onclick="choosePlayer()">
+            <img id="ki" src="img/kunstliche-intelligenz.png" onmouseover="getId('ki'), makeShade()" onmouseout="removeShade()" onclick="choosePlayer()">
+        </div>
+
+        <div class="center" id="inputField">
+            <h2>Playername:  <input id="inputName" type="text" autocomplete="off"></h2>  <!--Disable text input history: autocomplete-->
+        </div>
+
+    </section> 
+
+    <section id="chooseWeaponLayer">
+        
+        <div class="center">
+            <h1>Wählen Sie:</h1>
+        </div>
+            
+        <div class="center">
+            <img id="schere" src="img/schere.png" onmouseover="getId('schere'), makeShade()" onmouseout="removeShade()" onclick="chooseWeapon('schere')">
+            <img id="stein" src="img/axt.png" onmouseover="getId('stein'), makeShade()" onmouseout="removeShade()" onclick="chooseWeapon('stein')">
+            <img id="papier" src="img/neupapier.png" onmouseover="getId('papier'), makeShade()" onmouseout="removeShade()" onclick="chooseWeapon('papier')">
+        </div>
+    </section>
+
+    <section id="transitionEnemy">
+        <div class="center">
+            <h1>Der gegen Spieler ist an der Reihe!</h1>
+        </div>
+        <div class="center">
+            <h2>(WICHTIG: Achten Sie darauf dass nur Sie den Bildschirm sehen können!)</h2>
+        </div> 
+    </section>
+
+    <section id="countdown">
+        <div class="center">
+            <span id="countdownText">READY?</span>
+        </div>
+    </section>
+
+    <section id="gameLayer">
+            <div class="center abstandMitte">
+                <div>
+                    <h2 id="revealPlayerName">Name</h2>
+                    <h2>Score: <span id="revealPlayerScore">0</span></h2>
+                    <img class="little" id="player" src="img/frau.png">
+                </div>
+                <div>
+                    <h2 id="revealEnemyName">Name</h2>
+                    <h2>Score: <span id="revealEnemyScore">0</span></h2>
+                    <img class="little" id="enemy" src="img/kunstliche-intelligenz.png">
+                </div>
+            </div>
+
+        <div class="center abstandMitte">
+            <div>
+                <img class="links" id="playerHand" src="img/linksSchere.png">
+            </div>
+            <div>
+                <img class="rechts" id="enemyHand" src="img/papierRechts.png">
+            </div>
+        </div>
+
+        <div class="center">
+            <div>
+                <button id="restartButton" onclick="restart()">Neustart</button>
+            </div>
+            <div>
+                <button id="newRoundButton" onclick="newRound()">Nochmal</button>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+</html>
