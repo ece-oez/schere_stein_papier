@@ -261,10 +261,10 @@ function showGameLayout(){
 function changePlayer(){
     
     if(iconPlayer == "girl"){
-        playerIconLayer.src = "img/frau.png";
+        playerIconLayer.src = "img/girl.png";
     }
     if(iconPlayer == "boy"){
-        playerIconLayer.src = "mann.png";
+        playerIconLayer.src = "img/boy.png";
     }
     showPlayerName();
     showPlayerScore();
@@ -274,13 +274,13 @@ function changePlayer(){
 function changeEnemy(){
     
     if(iconEnemy == "girl"){
-        enemyIconLayer.src = "img/frau.png";
+        enemyIconLayer.src = "img/girl.png";
     }
     if(iconEnemy == "boy"){
-        enemyIconLayer.src = "img/mann.png";
+        enemyIconLayer.src = "img/boy.png";
     }
     if(iconEnemy == "ki"){
-        enemyIconLayer.src = "img/kunstliche-intelligenz.png";
+        enemyIconLayer.src = "img/ai.png";
     }
     showEnemyName();
     showEnemyScore();
@@ -307,13 +307,13 @@ function showEnemyName(){
 function changePlayerHand(){
 
     if(decisionPlayer == "schere"){
-        playerSideLayout.src = "img/linksSchere.png";
+        playerSideLayout.src = "img/scissor/left-player.png";
     }
     if(decisionPlayer == "stein"){
-        playerSideLayout.src = "img/axt.png";
+        playerSideLayout.src = "img/stone/left-player.png";
     }
     if(decisionPlayer == "papier"){
-        playerSideLayout.src = "img/papierLinks.png";
+        playerSideLayout.src = "img/paper/left-player.png";
     }
 
 }
@@ -321,13 +321,13 @@ function changePlayerHand(){
 function changeEnemyHand(){
     
     if(decisionEnemy == "schere"){
-        enemySideLayout.src = "img/schere.png";
+        enemySideLayout.src = "img/scissor/right-player.png";
     }
     if(decisionEnemy == "stein"){
-        enemySideLayout.src = "img/rechtsStein.png";
+        enemySideLayout.src = "img/stone/right-player.png";
     }
     if(decisionEnemy == "papier"){
-        enemySideLayout.src = "img/papierRechts.png";
+        enemySideLayout.src = "img/paper/right-player.png";
     }
 }
 
