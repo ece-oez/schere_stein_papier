@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.png">
+    <!-- <a href="https://www.flaticon.com/free-icons/rock-paper-scissors" title="rock paper scissors icons">Rock paper scissors icons created by Freepik - Flaticon</a> -->
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js" ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,9 +32,12 @@
             <h1>Wählen Sie einen Player aus</h1>
         </div>
         <div id="" class="center">
-            <img id="girl" src="img/frau.png" onmouseover="getId('girl'), makeShade()" onmouseout="removeShade()" onclick="choosePlayer()">
-            <img id="boy" src="img/mann.png" onmouseover="getId('boy'), makeShade()" onmouseout="removeShade()" onclick="choosePlayer()">
-            <img id="ki" src="img/kunstliche-intelligenz.png" onmouseover="getId('ki'), makeShade()" onmouseout="removeShade()" onclick="choosePlayer()">
+            <img id="girl" src="img/girl.png" onmouseover="getId('girl'), makeShade()" onmouseout="removeShade()" onclick="choosePlayer()">
+            <!-- quelle: <a href="https://www.flaticon.com/free-icons/girl" title="girl icons">Girl icons created by Freepik - Flaticon</a> -->
+            <img id="boy" src="img/boy.png" onmouseover="getId('boy'), makeShade()" onmouseout="removeShade()" onclick="choosePlayer()">
+            <!-- <a href="https://www.flaticon.com/free-icons/people" title="people icons">People icons created by Freepik - Flaticon</a> -->
+            <img id="ki" src="img/ai.png" onmouseover="getId('ki'), makeShade()" onmouseout="removeShade()" onclick="choosePlayer()">
+            <!-- <a href="https://www.flaticon.com/free-icons/robot" title="robot icons">Robot icons created by Freepik - Flaticon</a> -->
         </div>
 
         <div class="center" id="inputField">
@@ -48,9 +53,9 @@
         </div>
             
         <div class="center">
-            <img id="schere" src="img/schere.png" onmouseover="getId('schere'), makeShade()" onmouseout="removeShade()" onclick="chooseWeapon('schere')">
-            <img id="stein" src="img/axt.png" onmouseover="getId('stein'), makeShade()" onmouseout="removeShade()" onclick="chooseWeapon('stein')">
-            <img id="papier" src="img/neupapier.png" onmouseover="getId('papier'), makeShade()" onmouseout="removeShade()" onclick="chooseWeapon('papier')">
+            <img id="schere" src="img/scissor/hand.png" onmouseover="getId('schere'), makeShade()" onmouseout="removeShade()" onclick="chooseWeapon('schere')">
+            <img id="stein" src="img/paper/hand.png" onmouseover="getId('stein'), makeShade()" onmouseout="removeShade()" onclick="chooseWeapon('stein')">
+            <img id="papier" src="img/stone/hand.png" onmouseover="getId('papier'), makeShade()" onmouseout="removeShade()" onclick="chooseWeapon('papier')">
         </div>
     </section>
 
@@ -74,25 +79,25 @@
                 <div>
                     <h2 id="revealPlayerName">Name</h2>
                     <h2>Score: <span id="revealPlayerScore">0</span></h2>
-                    <img class="little" id="player" src="img/frau.png">
+                    <img class="little" id="player" src="img/girl.png">
                 </div>
                 <div>
                     <h2 id="revealEnemyName">Name</h2>
                     <h2>Score: <span id="revealEnemyScore">0</span></h2>
-                    <img class="little" id="enemy" src="img/kunstliche-intelligenz.png">
+                    <img class="little" id="enemy" src="img/ai.png">
                 </div>
             </div>
 
         <div class="center abstandMitte">
             <div>
-                <img class="links" id="playerHand" src="img/linksSchere.png">
+                <img class="links" id="playerHand" src="img/scissor/left-player.png">
             </div>
             <div>
-                <img class="rechts" id="enemyHand" src="img/papierRechts.png">
+                <img class="rechts" id="enemyHand" src="img/paper/right-player.png">
             </div>
         </div>
 
-        <div class="center">
+        <div class="center btns">
             <div>
                 <button id="restartButton" onclick="restart()">Neustart</button>
             </div>
