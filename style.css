@@ -115,3 +115,8 @@ input{
 .rechts{
     margin-right: 40px;
 }
+
+.btns{
+    display: flex;
+    gap: 20px;
+}
